@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+$secondary: #de00f8;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  text-underline-offset: 3px;
+
+}
+.btn{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #202020;
+}
+.btn svg{
+  margin-left: 7px;
+}
+html,
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: #131313;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+

@@ -1,0 +1,157 @@
+.prices{
+  background: #f6f6f6;
+  @media screen and (width < 300px){
+    .info{
+      .item{
+        padding-left: 3%;
+      }
+      p{
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (width < 768px) {
+    .downloads{
+      .card{
+        p{
+          width: 28%;
+        }
+      }
+    }
+  }
+  @media screen and (width > 400px) and (max-width: 768px) {
+    .info{
+      .item{
+        padding-left: 10%;
+      }
+      p{
+        width: 75%;
+      }
+    }
+    .downloads{
+      .card{
+        p{
+          width: 22%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px){
+    .downloads{
+      flex-direction: column;
+      svg{
+        position: relative;
+        bottom: 15px;
+      }
+      .card{
+        height: 50vh;
+        &:nth-child(2){
+          p{
+            &:before{
+              content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+            }
+          }
+        }
+        p{
+          top: 40%;
+          left: 60%;
+          text-align: end;
+        }
+      }
+    }
+    .info{
+      flex-direction: column;
+      .item{
+        flex-direction: column;
+        width: 100vw;
+        padding-top: 10%;
+        h1{
+          margin-bottom: 10%;
+        }
+
+      }
+    }
+  }
+  @media screen and (min-width: 769px) {
+    .downloads{
+      .card{
+        width: 50vw;
+        height: 50vw;
+        svg{
+          position: relative;
+          bottom: 20px;
+        }
+        p{
+          width: fit-content;
+          top: 44%;
+          left: 54%;
+        }
+      }
+
+
+    }
+    .info{
+      .item{
+        flex-direction: column;
+        h1{
+          margin-left: 3vw;
+          margin-top: 5vh;
+        }
+        p{
+          align-self: end;
+          width: 60%;
+          margin-top: 5%;
+          margin-right: 5%;
+        }
+        width: 33.3vw;
+      }
+    }
+  }
+  .info{
+    display: flex;
+    .item{
+      display: flex;
+      height: 32.4vh;
+      border: 1px solid #E4E4E4;
+      border-bottom: 1px solid #fefefe;
+      h1,p{
+        color: #1E1E1E;
+      }
+      h1{
+        font-weight: 800;
+        font-size: 68px;
+        line-height: 100%;
+        letter-spacing: -0.04em;
+      }
+      p{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
+  .downloads{
+    display: flex;
+    .card{
+      display: flex;
+      flex-direction: column;
+      background: #185F65;
+      color: #D4A95A;
+      svg{
+        margin: auto;
+      }
+      p{
+        position: relative;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 90%;
+        letter-spacing: -0.055em;
+        text-transform: uppercase;
+      }
+      &:nth-child(1){
+        color: #185F65;
+        background: #D4A95A;
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  position: absolute;
+  @media screen and (width < 300px) {
+    .logo{
+      width: 120px;
+    }
+    .menu{
+      width: 50px;
+    }
+  }
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+    .menu{
+      width: 50px;
+    }
+  }
+  @media screen and (min-width: 769px) and (min-height: 769px) {
+    
+  }
+  @media screen and (max-width: 768px), (orientation:portrait)  {
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin: 20px auto;
+    .wrapper{
+      height: 12px;
+    }
+    .logo{
+      margin-right: 27vw;
+    }
+    .project, .temp, .language, .phone {
+      visibility: hidden;
+      width: 0px;
+    }
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 1270px) {
+    p{
+      font-size: 13px;
+    }
+    .temp{
+      margin-left: 4vw;
+      margin-right: 4vw;
+    }
+    .project{
+      margin-right: 4vw;
+    }
+    .language{
+      margin-right: 3vw;
+    }
+    .phone{
+      margin-right: 4vw;
+      font-size: 14px;
+    }
+    .menu{
+      width: 55px;
+    }
+  }
+  @media screen and (min-width: 769px){
+    width: calc(100vw - 120px);
+    left: 60px;
+    top: 40px;
+    .logo{
+      height: 40px;
+    }
+  }
+  @media screen and (min-width: 1270px) and (max-width: 1366px){
+    p{
+      font-size: 14px;
+    }
+    .temp{
+      margin-left: 10vw;
+      margin-right: 6vw;
+    }
+    .project{
+      margin-right: 4vw;
+    }
+    .language{
+      margin-right: 4vw;
+    }
+    .phone{
+      margin-right: 4vw;
+    }
+  }
+  @media screen and (min-width: 1366px) {
+    p{
+      font-size: 15px;
+    }
+    .phone{
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 1367px) {
+    margin: 0px auto 0 auto;
+    .wrapper{
+      margin-left: auto;
+      .phone{
+        margin-right: 4.7vw;
+        margin-left: 3.7vw;
+      }
+      .project{
+        margin: 0 7vw;
+      }
+    }
+  }
+
+  a,p{
+    text-decoration: none;
+    color: #f6f6f6;
+  }
+
+  .temp{
+    a:nth-child(2){
+      p{
+        margin: 0 3vw;
+      }
+    }
+
+  }
+
+  .language svg{
+    margin-left: 8px;
+  }
+
+  .logo{
+    display: flex;
+  }
+  .menu{
+    height: 12px;
+  }
+
+
+  .temp, .language, .wrapper{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

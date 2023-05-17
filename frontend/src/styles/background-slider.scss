@@ -1,0 +1,245 @@
+.backgroundSlider{
+  height: 100vh;
+  transition: background 0.3s;
+  @media screen and (width < 300px) {
+    .firstSlide, .secondSlide, .thirdSlide, .fourthSlide {
+      p{
+        font-size: 38px;
+      }
+    }
+  }
+  @media screen and (height < 500px) and (orientation: landscape){
+    .firstSlide, .secondSlide, .thirdSlide, .fourthSlide{
+      padding-top: 20vh;
+    }
+  }
+  @media screen and (min-width: 300px) and (max-width: 400px){
+    .firstSlide, .secondSlide, .thirdSlide, .fourthSlide{
+      p{
+        font-size: 42px;
+      }
+    }
+  }
+  @media screen and (min-width: 401px) and (max-width: 768px) {
+    .firstSlide, .secondSlide, .thirdSlide, .fourthSlide {
+      p{
+        font-size: 55px;
+      }
+    }
+  }
+  @media screen and (min-width: 769px){
+    .buttons{
+      flex-direction: column;
+      width: 8px;
+      bottom: 8.5vh;
+      position: relative;
+    }
+  }
+  @media screen and (orientation:portrait)  {
+    font-size: 90px;
+  }
+  @media screen and (max-width: 768px), (orientation:portrait) {
+    .wrapper{
+      margin: 0 auto;
+    }
+    .buttons{
+      flex-direction: row;
+      width: fit-content;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      top: 90vh;
+      span{
+        margin: 0 4px;
+      }
+    }
+    .info, .temp, .copyright{
+      visibility: hidden;
+    }
+    .firstSlide, .secondSlide, .thirdSlide, .fourthSlide {
+      padding-top: 60vh;
+      div{
+        flex-direction: column;
+        span{
+          padding: 8px 0 0 30px;
+          font-size: 20px;
+          width: 177px;
+          height: 64px;
+        }
+      }
+    }
+    .firstSlide{
+      span{
+        position: absolute;
+        top: 140%;
+      }
+    }
+    .secondSlide, .thirdSlide{
+      div > span{
+        position: absolute;
+        top: 240%;
+      }
+    }
+    .fourthSlide{
+      div > img{
+        position: absolute;
+        margin: 0;
+        top: 240%;
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1367px){
+    .buttons{
+      left: 90.5vw;
+      margin-top: 1.3vh;
+      right: 2vw;
+    }
+  }
+  @media screen and (min-width: 1024px){
+    .wrapper{
+      position: relative;
+      top: 59.6vh;
+      left: 2.9vw;
+    }
+    .buttons{
+      span{
+        margin: 4px 0;
+      }
+    }
+    .firstSlide, .secondSlide, .thirdSlide, .fourthSlide {
+      font-size: 110px;
+      span{
+        height: 61px;
+        margin-left: 27px;
+        margin-top: 24px;
+        padding-top: 10px;
+        padding-left: 22px;
+        font-size: 16px;
+        width: 127px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1367px){
+    .buttons{
+      left: 93vw;
+      span{
+        margin: 5px 0;
+      }
+    }
+    .firstSlide, .secondSlide, .thirdSlide, .fourthSlide {
+      font-size: 140px;
+      span {
+        height: 77px;
+        width: 170px;
+        margin-top: 30px;
+        padding-top: 13px;
+        padding-left: 27px;
+        font-size: 20px;
+      }
+    }
+  }
+  .wrapper{
+    max-width: fit-content;
+  }
+  .buttons{
+    display: flex;
+
+    span{
+      height: 8px;
+      width: 8px;
+      background: #ffffff;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+    }
+    .active{
+      background-color: transparent;
+    }
+  }
+  .firstSlide{
+    span{
+      background: #19868F;
+    }
+  }
+  .secondSlide, .thirdSlide{
+    span{
+      background: #DA9A23;
+    }
+  }
+  .fourthSlide{
+    img{
+      height: 77px;
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+  }
+
+  .firstSlide, .secondSlide, .thirdSlide, .fourthSlide{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 0.8;
+
+    p{
+      letter-spacing: -0.05em;
+    }
+    div{
+      display: inline-flex;
+      position: relative;
+
+      span{
+        font-weight: 700;
+        letter-spacing: -0.04em;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .slider-footer{
+    display: flex;
+    width: calc(100vw - 120px);
+    position: absolute;
+    top: 95vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 300;
+    span, .temp{
+      text-decoration: underline;
+      color: white;
+    }
+    .copyright, .info{
+      color: #f6f6f6;
+      opacity: 50%;
+    }
+    .temp{
+      display: flex;
+      margin-left: 3.4vw;
+      p{
+        color: #ffffff;
+        opacity: 1;
+
+        &:nth-child(2){
+          margin: 0 3.1vw;
+        }
+      }
+    }
+    .info{
+      display: flex;
+      margin-left: auto;
+      p{
+        span{
+          margin-left: 6px;
+        }
+        &:nth-child(2){
+          margin-left: 2.6vw;
+        }
+      }
+    }
+  }
+}
