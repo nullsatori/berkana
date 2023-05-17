@@ -6,7 +6,6 @@ $secondary: #de00f8;
   margin: 0;
   font-family: Inter, sans-serif;
   text-underline-offset: 3px;
-
 }
 .btn{
   font-weight: 700;
@@ -24,6 +23,7 @@ body {
   max-width: 100vw;
   //overflow-x: hidden;
   background: #131313;
+  overflow-x: hidden;
 }
 
 a {
