@@ -1,183 +1,173 @@
-.about{
-  height: 200vh;
-  background: #f6f6f6;
-
-  p{
-    color: #1E1E1E;
+.agro-video{
+  height: 100vh;
+  background: #185F65;
+  color: #D4A95A;
+  display: flex;
+  .embla-desktop {
+    overflow: hidden;
   }
-
-  .wrapper{
+  .embla__container {
     display: flex;
-    width: calc(100vw - 120px);
-    margin: 0 auto;
   }
-  .underscored{
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: -0.02em;
-    text-decoration-line: underline;
-    text-transform: none;
+  .embla__slide {
+    min-width: 0;
   }
-  .top{
-    padding: 9.4vh 0 0 0;
-    flex-direction: column;
-    .head{
-      display: flex;
-      align-items: center;
-      max-height: 48px;
-      p{
+  @media screen and (width > 768px) {
 
-        &:nth-child(1){
-
-          position: relative;
-          bottom: 1.4vh;
-        }
-        &:nth-child(2){
-          font-size: 48px;
-          margin-left: auto;
-          font-weight: 600;
-          text-align: end;
-          letter-spacing: -0.04em;
-          padding-right: 0.8vw;
-          line-height: 90%;
-        }
-      }
+  }
+  @media screen and (width <= 768px) {
+    div .title{
+      align-self: start;
+      position: relative;
+      right: 4vw;
+      bottom: 8vh;
     }
-    .text{
-      margin-left: auto;
-      padding-right: 40px;
-      p{
-        line-height: 100%;
-        font-size: 48px;
-        text-transform: uppercase;
-        letter-spacing: -0.04em;
-
-      }
-    }
-  }
-
-  .middle{
-    flex-direction: row;
-    align-items: center;
-    margin-top: 12.2vh;
-    .slider{
+    .wrapper{
       width: 80vw;
-      height: 49.3vh;
-      .slider-control-centerleft{
-        position: relative;
-
-        left: 300px;
-        button{
-          width: 120px;
-          height: 120px;
-          border-radius: 100px;
-          opacity: 1;
-          font-size: 30px;
-
-        }
-      }
-      .slider-container{
-        right: 300px;
-      }
-      .item{
-        max-height: 49.3vh;
-        background: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &.partners{
-          height: 100%;
-          img{
-            width: 140px;
-            height: 140px;
-          }
-        }
-      }
-      .slider-container{
-        height: 100%;
-
-      }
+      justify-content: center;
+      margin: 0 auto;
     }
     .info{
-      min-width: 18vw;
-      font-style: normal;
-      line-height: 19px;
+
+      width: 75vw;
+      align-self: start;
+
+    }
+    .embla__slide{
+      flex: 0 0 30%;
+      >div{
+        width: 80vw;
+        height: 50vh;
+      }
+    }
+  }
+  @media screen and (768px < width < 1367px){
+    justify-content: center;
+    .title{
+      position: relative;
+      right: 40vw;
+      top: 4%;
+    }
+    .info{
+      width: 35vw;
+    }
+    h1{
+      font-size: 53px;
+    }
+    .embla__slide{
+
+      >div{
+        width: 30vw;
+        height: 38vh;
+      }
+    }
+  }
+  @media screen and (1367px < width < 1700px){
+    h1{
+      font-size: 53px;
+    }
+    .embla__slide{
+      >div{
+        width: 35vw;
+        height: 38vh;
+      }
+    }
+  }
+  @media screen and (min-width: 1700px){
+    h1{
+      font-size: 60px;
+    }
+    .embla__slide{
+      >div{
+        width: 40vw;
+        height: 50vh;
+      }
+    }
+  }
+  @media screen and (width > 1367px){
+    align-items: center;
+    .embla__slide{
+      flex: 0 0 25%;
+    }
+    .embla__next{
+      height: 120px;
+      width: 120px;
+      border-radius: 100px;
+      border: none;
+      background: #D4A95A;
+      position: relative;
+      bottom: 50%;
+      left: 23.3%;
+    }
+
+    .title{
+      margin-left: 60px;
+      position: relative;
+      top: 1vh;
+    }
+
+    .wrapper{
+      flex-direction: row;
+      .info{
+        max-width: 25vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
+        p{
+          margin: 45px 0;
+        }
+      }
+    }
+  }
+  @media screen and (width < 1367px){
+    .embla-desktop{
+
+    }
+
+
+    .btn{
+      visibility: hidden;
+    }
+    .embla-desktop{
+      .embla__slide{
+        flex: 0 0 40%;
+
+      }
+
+    }
+    h1{
+      font-size: 48px;
+    }
+    .wrapper{
+      flex-direction: column;
+      align-items: center;
+      .info{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        h1{
+          font-size: 42px;
+          margin-bottom: 5%;
+        }
+      }
+    }
+  }
+  h1{
+    font-weight: 800;
+    line-height: 85.02%;
+    letter-spacing: -0.055em;
+  }
+  p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .wrapper{
+    display: flex;
+    .info{
       display: flex;
       flex-direction: column;
-      position: relative;
-      top: 2.3vh;
-      right: 12vw;
-      .btn{
-        padding: 10px 0;
-        margin-top: 4vh;
-        svg{
-          margin-left: 13px;
-        }
-      }
     }
   }
-  //todo: придумать, как выровнять title
-  .bottom{
-    height: 100vh;
-    flex-direction: column;
-    overflow: hidden;
-    .title{
-
-      width: 21.8vw;
-      position: relative;
-      top: 35vh;
-
-
-    }
-    .item{
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      h1{
-        font-size: 60px;
-        font-weight: 800;
-        color: #2B2A29;
-        line-height: 85.02%;
-      }
-
-      .info{
-        width: 21.8vw;
-        p{
-          margin: 4vh 0;
-        }
-      }
-    }
-    .image{
-      figure{
-        width: 42vw;
-        height: 51vh;
-        position: absolute;
-        background: white;
-        top: 30%;
-        left: 45%;
-        img{
-          position: relative;
-          top: 45vh;
-          left: 35vw;
-        }
-      }
-      img{
-        mix-blend-mode: darken;
-        position: relative;
-        left: 100px;
-      }
-    }
+  .btn{
+    color: #D4A95A;
   }
-
-  span{
-    font-size: 79px;
-    font-weight: 300;
-    position: relative;
-    bottom: 0.2vh;
-    left: 0.2vw;
-  }
-  text-align: start;
 }

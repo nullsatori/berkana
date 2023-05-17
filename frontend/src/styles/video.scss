@@ -40,21 +40,23 @@
       flex-direction: row;
       justify-content: center;
       .playback-btn{
-        margin: 46vh 15.6vw;
+        margin: 46vh 14vw;
       }
       p{
         margin-top: 16.6vh;
-        width: 18vw;
+        width: 17vw;
         font-size: 24px;
       }
       .info{
+
         p{
-          margin-top: 80.5vh;
+          width: 16vw;
+          margin-top: 75.5vh;
         }
       }
     }
     .btn{
-      margin-top: 40px;
+      margin-top: 2vh
     }
   }
   .wrapper{

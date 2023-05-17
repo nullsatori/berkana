@@ -20,7 +20,7 @@
       }
     }
   }
-  @media screen and (min-width: 401px) and (max-width: 768px) {
+  @media screen and (min-width: 401px) and (max-width: 1024px) {
     .firstSlide, .secondSlide, .thirdSlide, .fourthSlide {
       p{
         font-size: 55px;
@@ -38,7 +38,7 @@
   @media screen and (orientation:portrait)  {
     font-size: 90px;
   }
-  @media screen and (max-width: 768px), (orientation:portrait) {
+  @media screen and (max-width: 1024px), (orientation:portrait) {
     .wrapper{
       margin: 0 auto;
     }

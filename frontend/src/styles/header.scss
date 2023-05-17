@@ -41,11 +41,15 @@
 
   }
   @media screen and (min-width: 769px) and (max-width: 1270px) {
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     p{
       font-size: 13px;
     }
     .temp{
-      margin-left: 4vw;
+      margin-left: 2vw;
       margin-right: 4vw;
     }
     .project{
@@ -58,13 +62,9 @@
       margin-right: 4vw;
       font-size: 14px;
     }
-    .menu{
-      width: 55px;
-    }
+
   }
   @media screen and (min-width: 769px){
-    width: calc(100vw - 120px);
-    left: 60px;
     top: 40px;
     .logo{
       height: 40px;
@@ -97,6 +97,8 @@
     }
   }
   @media screen and (min-width: 1367px) {
+    width: calc(100vw - 120px);
+    left: 60px;
     margin: 0px auto 0 auto;
     .wrapper{
       margin-left: auto;
