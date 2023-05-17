@@ -11,14 +11,7 @@ const AgroVideo = () => {
         '(width < 1400px)': {loop: true, align: "start"},
       }
     })
-  const onSelect = useCallback((emblaApi, eventName) => {
 
-    console.log(`Embla just triggered ${eventName}!`)
-  }, [])
-
-  useEffect(() => {
-    if (emblaApi) emblaApi.on('select', onSelect)
-  }, [emblaApi, onSelect])
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
   }, [emblaApi])
