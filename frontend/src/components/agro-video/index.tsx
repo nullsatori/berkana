@@ -6,7 +6,6 @@ import dynamic from 'next/dynamic'
 const AgroVideo = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     startIndex: 0,
-    containerSelector: '.embla__viewport',
       breakpoints: {
         '(width > 768px)': {loop: true, align: "start"},
         '(width < 1400px)': {loop: true, align: "start"},
