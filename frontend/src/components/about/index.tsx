@@ -115,7 +115,11 @@ const About = () => {
           <p className="underscored">
             Семена
           </p>
-          <img src="/corn-modified.png" alt=""/>
+          <div>
+            <img src="/corn-modified.png" alt=""/>
+
+          </div>
+
         </div>
         <div className="info">
           <h1>Кукуруза</h1>
@@ -133,6 +137,7 @@ const About = () => {
             <span className="dot" ></span>
             <span className="dot" ></span>
             <span className="dot" ></span>
+
           </div>
           <img src="/syngenta.png" alt="logo"/>
         </div>

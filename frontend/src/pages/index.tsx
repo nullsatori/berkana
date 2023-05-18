@@ -10,6 +10,7 @@ import Prices from "@/components/prices";
 import Partners from "@/components/partners";
 import Footer from "@/components/footer";
 import AgroVideo from "@/components/agro-video";
+import Menu from "@/components/menu";
 
 const inter = Inter({ subsets: ['latin'] })
 

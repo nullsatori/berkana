@@ -1,6 +1,7 @@
 .video{
   height: 100vh;
   background: url('/video-placeholder.png');
+  background-size: cover;
   color: white;
   @media screen and (width < 300px){
     .wrapper{
@@ -10,12 +11,20 @@
       margin: 4vh 0;
     }
   }
-  @media screen and (300px < width < 768px){
+  @media screen and (300px < width < 768px) and (orientation:portrait){
     .wrapper{
       padding-top: 10vh;
     }
     .playback-btn{
       margin: 15vh 0;
+    }
+  }
+  @media screen and (height < 600px) and (orientation:landscape){
+    .wrapper{
+      padding-top: 10vh;
+    }
+    .playback-btn{
+      margin: 5vh 0;
     }
   }
   @media screen and (max-width: 768px) {

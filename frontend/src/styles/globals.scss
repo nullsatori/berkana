@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 $secondary: #de00f8;
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -21,9 +22,11 @@ html,
 body {
   min-height: 100vh;
   max-width: 100vw;
-  //overflow-x: hidden;
-  background: #131313;
   overflow-x: hidden;
+  background: #131313;
+}
+body{
+  position: relative;
 }
 
 a {

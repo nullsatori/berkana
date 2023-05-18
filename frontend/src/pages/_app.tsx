@@ -7,6 +7,7 @@ import '@/styles/prices.scss'
 import '@/styles/partners.scss'
 import '@/styles/footer.scss'
 import '@/styles/agro-video.scss'
+import '@/styles/menu.scss'
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
