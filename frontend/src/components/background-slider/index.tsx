@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 
 const BackgroundSlider = () => {
-  const [slide, setSlide] = useState(1);
+  const [slide, setSlide] = useState(0);
   const slideImages = [
     "/first-slide.png",
     "/second-slide.png",
