@@ -70,7 +70,7 @@ const BackgroundSlider = () => {
 
       <div className="slider-footer">
         <p className='copyright'>
-          © 1996–2023 «Беркана»
+          © 2012–2023 «Беркана»
         </p>
         <div className="temp">
           <p>
