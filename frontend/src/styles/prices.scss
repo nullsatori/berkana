@@ -95,14 +95,14 @@
     .downloads{
       .card{
         width: 50vw;
-        height: 50vw;
+
         svg{
           position: relative;
           bottom: 20px;
         }
         p{
           width: fit-content;
-          top: 44%;
+          top: 40%;
           left: 54%;
         }
       }
@@ -149,8 +149,9 @@
   }
   .downloads{
     display: flex;
-    .card{
 
+    .card{
+      height: 40vh;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       display: flex;
       flex-direction: column;

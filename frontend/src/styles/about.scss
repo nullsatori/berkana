@@ -302,9 +302,15 @@
     align-items: center;
     .slider{
       .slider-control-centerleft{
-        position: relative;
+        position: absolute;
+        left: 18vw;
+      }
+      .slider-control-centerright{
+        position: absolute;
+        right: -8vw;
+      }
+      .slider-control-centerleft, .slider-control-centerright{
 
-        left: 300px;
         button{
           width: 120px;
           height: 120px;

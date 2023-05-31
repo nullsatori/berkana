@@ -33,7 +33,8 @@ const About = () => {
                         pagingDotsStyle: {display: 'none'},
                         prevButtonText: "←",
                         nextButtonText: "→",
-                        prevButtonStyle: {background: "#1E1E1E"}
+                        prevButtonStyle: {background: "#1E1E1E"},
+                        nextButtonStyle: {background: "#1E1E1E"}
                       }
                     }
           >
@@ -87,7 +88,8 @@ const About = () => {
               pagingDotsStyle: {display: 'none'},
               prevButtonText: "⟵",
               nextButtonText: "⟶",
-              prevButtonStyle: {background: "#1E1E1E"}
+              prevButtonStyle: {background: "#1E1E1E"},
+              nextButtonStyle: {background: "#1E1E1E"}
             }
           }>
           <div className="item">

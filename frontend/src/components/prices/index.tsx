@@ -6,7 +6,7 @@ const Prices = () => {
       <div className="info">
         <div className="item">
           <h1>
-            1993
+            2012
           </h1>
           <p>
             Большой опыт работы
