@@ -4,7 +4,7 @@ const Partners = () => {
   return (
     <div className='partners'>
       <div className="partner"><img src="/lidea.svg" alt="logo"/></div>
-      <div className="partner"><img src="/neoport.png" alt="logo"/></div>
+      <div className="partner"><img alt="logo"/></div>
       <div className="partner"><img src="/eurochem.png" alt="logo"/></div>
       <div className="partner"><img src="/bashinkom.png" alt="logo"/></div>
       <div className="partner mobile"><img src="/elite.png" alt="logo"/></div>
