@@ -3,7 +3,7 @@ import Header from "@/components/general/header";
 import Footer from "@/components/general/footer";
 import Menu from "@/components/general/menu";
 
-const Layout = ({ children }) => {
+const Layout = ({ children } : any) => {
   const [menuActive, setMenuActive] = useState(false);
 
   // useEffect(() => {
