@@ -3,7 +3,8 @@ import useEmblaCarousel, { EmblaOptionsType } from 'embla-carousel-react'
 
 type PropType = {
   slides: number[]
-  options?: EmblaOptionsType
+  options?: EmblaOptionsType,
+  scrollPrev: any,
 }
 
 const EmblaCarousel: React.FC<PropType> = (props: any) => {
