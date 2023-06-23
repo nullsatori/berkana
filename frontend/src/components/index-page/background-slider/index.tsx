@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { handleDotClick } from "@/utils/handleDotClick";
 import { useWindowSize } from "rooks";
 import { motion } from "framer-motion";
@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const BackgroundSlider = () => {
   const [slide, setSlide] = useState(0);
   const [width, setWidth] = useState(0);
-  const { innerWidth, innerHeight, outerHeight, outerWidth } = useWindowSize();
+  const { outerWidth } = useWindowSize();
   const slideImages = [
     "/first-slide.png",
     "/second-slide.png",
@@ -84,7 +84,8 @@ const BackgroundSlider = () => {
   };
 
   useEffect(() => {
-    setWidth(outerWidth);
+    if (outerWidth)
+      setWidth(outerWidth);
     console.log(width, " - width");
   }, [outerWidth]);
 
