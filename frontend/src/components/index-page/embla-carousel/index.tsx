@@ -25,7 +25,7 @@ const EmblaCarousel: React.FC<PropType> = (props: any) => {
         </button>
         <div className="embla-carousel__viewport" ref={emblaRef}>
            <div className="embla-carousel__container">
-              {slides.map((index) => (
+              {slides.map((index: number) => (
                   <div className="embla-carousel__slide" key={index}>
                       <div className="item">
                       <img
