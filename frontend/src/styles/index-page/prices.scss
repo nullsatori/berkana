@@ -1,89 +1,90 @@
-.prices{
+.prices {
   background: #f6f6f6;
-  @media screen and (width < 300px){
-    .info{
-      .item{
+  @media screen and (width < 300px) {
+    .info {
+      .item {
         padding-left: 3%;
       }
-      p{
+      p {
         width: 100%;
       }
     }
   }
   @media screen and (width < 768px) {
-    .downloads{
-      .card{
-        p{
+    .downloads {
+      .card {
+        p {
           width: 28%;
         }
       }
     }
   }
   @media screen and (width > 400px) and (max-width: 768px) {
-    .info{
-      .item{
-        padding-left: 10%;
+    .info {
+      .item {
       }
-      p{
+      h1 {
+      }
+      p {
         width: 75%;
       }
     }
-    .downloads{
-      .card{
-        p{
+    .downloads {
+      .card {
+        p {
           width: 22%;
         }
       }
     }
   }
-  @media screen and (max-width: 768px){
-    .downloads{
+  @media screen and (max-width: 768px) {
+    .downloads {
       flex-direction: column;
-      svg{
+      svg {
         position: relative;
         bottom: 15px;
       }
-      .card{
+      .card {
         height: 50vh;
-        &:nth-child(2){
-          p{
-            &:before{
+        &:nth-child(2) {
+          p {
+            &:before {
               content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
             }
           }
         }
-        p{
+        p {
           top: 40%;
           left: 60%;
           text-align: end;
         }
       }
     }
-    .info{
+    .info {
       flex-direction: column;
-      .item{
+      .item {
         flex-direction: column;
+        justify-content: center;
         width: 100vw;
-        padding-top: 5%;
-        h1{
-          margin-bottom: 10%;
+        padding: 12.5% 5%;
+        h1 {
+          margin-bottom: 3%;
         }
-
       }
     }
   }
-  @media screen and (height < 600px) and (orientation:landscape) {
-    .info{
-      .item{
+  @media screen and (height < 600px) and (orientation: landscape) {
+    .info {
+      .item {
         max-height: fit-content;
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
-        h1{
+        h1 {
           margin: 0;
           align-self: start;
         }
-        p{
+        p {
           margin-right: 20%;
           width: 30vw;
           margin-left: 20%;
@@ -91,76 +92,83 @@
       }
     }
   }
-  @media screen and (min-width: 769px) {
-    .downloads{
-      .card{
+  @media screen and (width > 1300px) {
+    .info {
+      .item {
+      }
+    }
+  }
+  @media screen and (width > 768px) {
+    .downloads {
+      .card {
         width: 50vw;
 
-        svg{
+        svg {
           position: relative;
           bottom: 20px;
         }
-        p{
+        p {
           width: fit-content;
           top: 40%;
           left: 54%;
         }
       }
     }
-    .info{
-      .item{
+    .info {
+      .item {
         flex-direction: column;
-        h1{
-          margin-left: 3vw;
-          margin-top: 5vh;
+        padding-left: 1%;
+        padding-right: 1%;
+        justify-content: center;
+
+        h1 {
+          margin-bottom: 2%;
         }
-        p{
+        p {
           align-self: end;
-          width: 60%;
-          margin-top: 5%;
-          margin-right: 5%;
         }
         width: 33.3vw;
       }
     }
   }
-  .info{
+  .info {
     display: flex;
-    .item{
+    .item {
       display: flex;
       height: 32.4vh;
-      border: 1px solid #E4E4E4;
+      border: 1px solid #e4e4e4;
       border-bottom: 1px solid #fefefe;
-      h1,p{
-        color: #1E1E1E;
+      h1,
+      p {
+        color: #185f65;
       }
-      h1{
+      h1 {
         font-weight: 800;
         font-size: 68px;
         line-height: 100%;
         letter-spacing: -0.04em;
       }
-      p{
+      p {
         font-weight: 400;
         font-size: 15px;
         line-height: 18px;
       }
     }
   }
-  .downloads{
+  .downloads {
     display: flex;
 
-    .card{
+    .card {
       height: 40vh;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
       display: flex;
       flex-direction: column;
-      background: #185F65;
-      color: #D4A95A;
-      svg{
+      background: #185f65;
+      color: #d4a95a;
+      svg {
         margin: auto;
       }
-      p{
+      p {
         position: relative;
         font-weight: 800;
         font-size: 22px;
@@ -168,9 +176,9 @@
         letter-spacing: -0.055em;
         text-transform: uppercase;
       }
-      &:nth-child(1){
-        color: #185F65;
-        background: #D4A95A;
+      &:nth-child(1) {
+        color: #185f65;
+        background: #d4a95a;
       }
     }
   }

@@ -1,4 +1,4 @@
-.header{
+.header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -7,92 +7,97 @@
   line-height: 18px;
   text-transform: uppercase;
   position: absolute;
+
   @media screen and (width < 300px) {
-    .logo{
+    .logo {
       width: 120px;
     }
-    .menu{
+    .menu {
       width: 50px;
     }
   }
   @media screen and (min-width: 300px) and (max-width: 400px) {
-    .menu{
+    .menu {
       width: 50px;
     }
   }
   @media screen and (min-width: 769px) and (min-height: 769px) {
-    
   }
-  @media screen and (max-width: 768px), (orientation:portrait)  {
+  @media screen and (max-width: 768px), (orientation: portrait) {
     width: fit-content;
     left: 0;
     right: 0;
     margin: 20px auto;
-    .wrapper{
+    .wrapper {
       height: 12px;
     }
-    .logo{
+    .logo {
       margin-right: 27vw;
     }
-    .project, .temp, .language, .phone {
+    .project,
+    .temp,
+    .language,
+    .phone {
       visibility: hidden;
       width: 0px;
     }
-
   }
   @media screen and (min-width: 769px) and (max-width: 1270px) {
     justify-content: center;
     left: 0;
     right: 0;
     margin: 0 auto;
-    p{
+    p {
       font-size: 13px;
     }
-    .temp{
+    .temp {
       margin-left: 2vw;
       margin-right: 4vw;
     }
-    .project{
+    .project {
       margin-right: 4vw;
     }
-    .language{
+    .language {
       margin-right: 3vw;
     }
-    .phone{
+    .phone {
       margin-right: 4vw;
       font-size: 14px;
     }
-
   }
-  @media screen and (min-width: 769px){
+  @media screen and (min-width: 769px) {
     top: 40px;
-    .logo{
+    .logo {
       height: 40px;
     }
   }
-  @media screen and (min-width: 1270px) and (max-width: 1366px){
-    p{
+  @media screen and (min-width: 1270px) and (max-width: 1366px) {
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    p {
       font-size: 14px;
     }
-    .temp{
+    .temp {
       margin-left: 10vw;
       margin-right: 6vw;
     }
-    .project{
+    .project {
       margin-right: 4vw;
     }
-    .language{
+    .language {
       margin-right: 4vw;
     }
-    .phone{
+    .phone {
       margin-right: 4vw;
     }
   }
   @media screen and (min-width: 1366px) {
-    p{
+    p {
       font-size: 15px;
     }
-    .phone{
+    .phone {
       font-size: 16px;
     }
   }
@@ -100,46 +105,47 @@
     width: calc(100vw - 120px);
     left: 60px;
     margin: 0px auto 0 auto;
-    .wrapper{
+    .wrapper {
       margin-left: auto;
-      .phone{
+      .phone {
         margin-right: 4.7vw;
         margin-left: 3.7vw;
       }
-      .project{
+      .project {
         margin: 0 7vw;
       }
     }
   }
 
-  a,p{
+  a,
+  p {
     text-decoration: none;
     color: #f6f6f6;
   }
 
-  .temp{
-    a:nth-child(2){
-      p{
+  .temp {
+    a:nth-child(2) {
+      p {
         margin: 0 3vw;
       }
     }
-
   }
 
-  .language svg{
+  .language svg {
     margin-left: 8px;
   }
 
-  .logo{
+  .logo {
     display: flex;
   }
-  .menu{
+  .menu {
+    z-index: 1;
     height: 12px;
   }
 
-
-  .temp, .language, .wrapper{
-
+  .temp,
+  .language,
+  .wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;

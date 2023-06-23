@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 $secondary: #de00f8;
 
 * {
@@ -8,14 +8,14 @@ $secondary: #de00f8;
   font-family: Inter, sans-serif;
   text-underline-offset: 3px;
 }
-.btn{
+.btn {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
   text-transform: uppercase;
-  color: #202020;
+  color: #185f65;
 }
-.btn svg{
+.btn svg {
   margin-left: 7px;
 }
 html,
@@ -25,7 +25,7 @@ body {
   overflow-x: hidden;
   background: #131313;
 }
-body{
+body {
   position: relative;
 }
 
@@ -33,4 +33,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
