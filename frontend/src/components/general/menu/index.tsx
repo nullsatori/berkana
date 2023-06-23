@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
-const Menu = ({ menuActive, setMenuActive }) => {
+const Menu = ({ menuActive, setMenuActive } : any) => {
   return (
     <AnimatePresence>
       {menuActive && (

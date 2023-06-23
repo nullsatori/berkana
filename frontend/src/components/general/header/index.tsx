@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Menu from "@/components/general/menu";
 
-const Header = ({ setMenuActive }) => {
+const Header = ({ setMenuActive} : any) => {
   // const [url, setUrl] = useState({});
   // useEffect(() => {
   //   const getUrl = async() => {
