@@ -7,11 +7,24 @@
     .fourthSlide {
       padding-top: 50vh;
       p {
-        font-size: 40px;
+        font-size: 38px;
+      }
+      img{
+        height: 60px;
       }
       span {
         font-size: 15px;
         padding: 10px 20px;
+      }
+    }
+  }
+  @media (width > 300px) {
+    .firstSlide,
+    .secondSlide,
+    .thirdSlide,
+    .fourthSlide{
+      img{
+        height: 77px;
       }
     }
   }
@@ -30,7 +43,7 @@
     .fourthSlide {
       padding-top: 50vh;
       p {
-        font-size: 45px;
+        font-size: 43px;
       }
       span {
         font-size: 18px;
@@ -38,22 +51,22 @@
       }
     }
   }
-  @media (400px < width <= 600px) {
+  @media (400px < width <= 700px) {
     .firstSlide,
     .secondSlide,
     .thirdSlide,
     .fourthSlide {
       padding-top: 50vh;
       p {
-        font-size: 60px;
+        font-size: 53px;
       }
       span {
         font-size: 18px;
-        padding: 14px 28px;
+        padding: 10px 20px;
       }
     }
   }
-  @media (width > 600px) {
+  @media (width > 700px) {
     .firstSlide,
     .secondSlide,
     .thirdSlide,
@@ -69,7 +82,7 @@
     .secondSlide,
     .thirdSlide,
     .fourthSlide {
-      padding-top: 50vh;
+      padding-top: 32vh;
       p {
         font-size: 100px;
       }
@@ -83,6 +96,28 @@
       padding-top: 30vh;
       p {
         font-size: 50px;
+      }
+    }
+  }
+  @media (601px < width <= 1024px) and (orientation: landscape) and (400px < height < 600px) {
+    .firstSlide,
+    .secondSlide,
+    .thirdSlide,
+    .fourthSlide {
+      padding-top: 30vh;
+      p {
+        font-size: 80px;
+      }
+    }
+  }
+  @media (601px < width <= 1024px) and (orientation: landscape) and (height > 600px) {
+    .firstSlide,
+    .secondSlide,
+    .thirdSlide,
+    .fourthSlide {
+      padding-top: 50vh;
+      p {
+        font-size: 100px;
       }
     }
   }
@@ -251,8 +286,6 @@
   }
   .fourthSlide {
     img {
-      height: 77px;
-
       margin-left: 20px;
     }
   }

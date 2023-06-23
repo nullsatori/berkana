@@ -163,6 +163,21 @@ const AgroVideo = () => {
             </div>
             <div className="embla__slide">
               <ReactPlayer
+                playIcon={
+                  <svg
+                    className="playback-btn"
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.9231 5.88763C14.359 6.71665 14.359 8.78919 12.9231 9.6182L3.23077 15.2141C1.79487 16.0431 -7.24749e-08 15.0068 0 13.3488L4.89205e-07 2.15706C5.6168e-07 0.499026 1.79487 -0.537241 3.23077 0.291774L12.9231 5.88763Z"
+                      fill="white"
+                    />
+                  </svg>
+                }
                 light={true}
                 controls={true}
                 url="https://www.youtube.com/watch?v=xtp2ouOHiHU"
