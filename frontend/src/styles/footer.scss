@@ -1,6 +1,5 @@
 .footer {
   background: white;
-
   display: flex;
   flex-direction: column;
   @media (width < 769px) {
@@ -42,7 +41,7 @@
             display: flex;
             margin-top: min(5vh, 100px);
             input[type="submit"] {
-              font-size: 30px;
+              font-size: 2rem;
               position: relative;
               right: 30px;
               bottom: 5%;
@@ -100,7 +99,7 @@
             input[type="submit"] {
               position: absolute;
               right: 0;
-              font-size: 40px;
+              font-size: 2.66rem;
             }
           }
           h1 {
@@ -151,27 +150,27 @@
     .left {
       .contacts {
         p {
-          font-size: 18px;
+          font-size: 1.2rem;
         }
       }
     }
     .right {
       h1 {
-        font-size: 22px;
+        font-size: 1.46rem;
       }
       p {
-        font-size: 15px;
+        font-size: 1rem;
       }
       .bottom {
         p {
-          font-size: 12px;
+          font-size: 0.8rem;
         }
       }
       form {
         margin-top: min(5vh, 190px);
         input[type="text"] {
           &::placeholder {
-            font-size: 15px;
+            font-size: 1rem;
           }
         }
       }
@@ -184,20 +183,20 @@
     .left {
       .contacts {
         p {
-          font-size: 20px;
+          font-size: 1.33rem;
         }
       }
     }
     .right {
       h1 {
-        font-size: 32px;
+        font-size: 2.13rem;
       }
       p {
-        font-size: 22px;
+        font-size: 1.46rem;
       }
       .bottom {
         p {
-          font-size: 14px;
+          font-size: 0.93rem;
         }
       }
       form {
@@ -205,7 +204,7 @@
         input[type="text"] {
           width: 22.4vw;
           &::placeholder {
-            font-size: 16px;
+            font-size: 1.06rem;
           }
         }
       }
@@ -233,7 +232,7 @@
       text-transform: uppercase;
       position: relative;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 0.93rem;
     }
   }
 
@@ -267,7 +266,7 @@
         width: fit-content;
 
         font-weight: 400;
-        font-size: 15px;
+        font-size: 1rem;
         line-height: 110%;
         color: #686868;
       }
@@ -278,7 +277,7 @@
       margin-bottom: 40px;
       align-items: center;
       p {
-        font-size: 14px;
+        font-size: 0.93rem;
         line-height: 17px;
         color: #bdbdbd;
         min-width: 168px;

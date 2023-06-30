@@ -20,11 +20,35 @@ $secondary: #de00f8;
 }
 html,
 body {
+  background: #1e1e1e;
   min-height: 100vh;
   max-width: 100vw;
   overflow-x: hidden;
-  background: #131313;
+
 }
+
+@media (width <= 1000px){
+  html,body{
+    font-size: 13px;
+  }
+}
+@media (width > 1000px){
+  html,body{
+    font-size: 14px;
+  }
+}
+@media (width > 1300px){
+  html,body{
+    font-size: 15px;
+  }
+}
+
+@media (width <= 900px){
+  html,body{
+    font-size: 12px;
+  }
+}
+
 body {
   position: relative;
 }
